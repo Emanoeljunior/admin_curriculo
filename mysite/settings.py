@@ -74,7 +74,10 @@ INSTALLED_APPS = (
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "polls",
+    "blog",
+    "graphene_django",
+    "ckeditor",
+    "ckeditor_uploader"
 )
 
 MIDDLEWARE = (
@@ -130,6 +133,11 @@ if os.getenv("TRAMPOLINE_CI", None):
             "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
     }
+    
+GRAPHENE = {
+  "SCHEMA": "blog.schema.schema",
+}
+
 
 
 # Password validation
@@ -171,6 +179,9 @@ STATIC_URL = "/static/"
 DEFAULT_FILE_STORAGE = "storages.backends.gcloud.GoogleCloudStorage"
 STATICFILES_STORAGE = "storages.backends.gcloud.GoogleCloudStorage"
 GS_DEFAULT_ACL = "publicRead"
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
 # [END gaeflex_py_django_static_config]
 # [END staticurl]
 
