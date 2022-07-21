@@ -1,25 +1,16 @@
-# Getting started with Django on Google Cloud Platform on App Engine Flexible
+# Aplicação Django para controle de posts no blog curriculo
 
 [![Open in Cloud Shell][shell_img]][shell_link]
 
-[shell_img]: http://gstatic.com/cloudssh/images/open-btn.png
-[shell_link]: https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/GoogleCloudPlatform/python-docs-samples&page=editor&open_in_editor=appengine/flexible/django_cloudsql/README.md
 
-This repository is an example of how to run a [Django](https://www.djangoproject.com/) 
-app on Google App Engine Flexible Environment. It uses the 
-[Writing your first Django app](https://docs.djangoproject.com/en/3.2/intro/tutorial01/) as the 
-example app to deploy.
+Aplicação que pode ser executada tanto localmente, como no ambiente do appengine.
+No entanto por utilizar chaves do cloud não é possível executar de forma local sem que tenha a habilitação da proxy do cloud sql.
 
+Link em produção disponível em:
+https://curriculo-emanoel.uc.r.appspot.com/admin/
 
-# Tutorial
-See our [Running Django in the App Engine Flexible Environment](https://cloud.google.com/python/django/flexible-environment) tutorial for instructions for setting up and deploying this sample application.
+# Fonte
+Baseado no tutorial (https://cloud.google.com/python/django/flexible-environment).
 
 
-## Contributing changes
 
-* See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-
-## Licensing
-
-* See [LICENSE](LICENSE)
