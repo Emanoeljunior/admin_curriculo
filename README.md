@@ -1,8 +1,5 @@
 # Aplicação Django para controle de posts no blog curriculo
 
-[![Open in Cloud Shell][shell_img]][shell_link]
-
-
 Aplicação que pode ser executada tanto localmente, como no ambiente do appengine.
 No entanto por utilizar chaves do cloud não é possível executar de forma local sem que tenha a habilitação da proxy do cloud sql.
 
